@@ -49,10 +49,10 @@ const App = () => {
   }, []);
 
   return (
-    <div class="container">
+    <div className="container">
       <h1>Task Manager</h1>
       {/* create new task */}
-        <div class="task-input">
+        <div className="task-input">
         <input 
           type="text"
           placeholder="Title"
@@ -69,12 +69,11 @@ const App = () => {
          <button onClick={createTask}>Add Task</button>
          </div>
       {/* task list */}
-      <div class="task-list">
-      <ul>
+      <ul className="task-list">
         {tasks.map(task => (
           <li key={task.id}>
             {editingTask?.id === task.id ? (
-              <div>
+              <div className="edit-input">
                 <input
                   type="text"
                   value={editingTask.title}
@@ -88,22 +87,21 @@ const App = () => {
                 <button onClick={() => updateTask(task.id)}>Save</button>
               </div>
             ) : (
-              <div>
+              <div className="list-components">
                 <strong>{task.title}</strong>
                 <br />
                 <br />
                 {task.description}
                 <br />
                 <br />
-                <button onClick={() => setEditingTask(task)}>Edit</button>
-                <button onClick={() => deleteTask(task.id)}>Delete</button>
+                <button className="edit-button" onClick={() => setEditingTask(task)}>Edit</button>
+                <button className="delete-button" onClick={() => deleteTask(task.id)}>Delete</button>
               </div>
             )}
           </li>
         ))}
       </ul>
       </div>
-    </div>
   )
 
 }

@@ -68,7 +68,7 @@ button:hover {
     border-radius: 4px;
 }
 
-.task-list li div {
+.task-list {
     flex-grow: 1;
 }
 
@@ -100,4 +100,11 @@ button:hover {
 
 .task-list .delete-button:hover {
     background-color: #c82333;
+}
+
+.edit-input {
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    margin-bottom: 20px;
 }
