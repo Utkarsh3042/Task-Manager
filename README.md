@@ -1,6 +1,3 @@
-
-```env/Scripts/activate```
-
 To Install python libraries:
 
 ```cd api```
