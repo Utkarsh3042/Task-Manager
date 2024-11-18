@@ -1,6 +1,3 @@
-To Start virtual environment:
-
-```cd api```
 
 ```env/Scripts/activate```
 
@@ -10,4 +7,15 @@ To Install python libraries:
 
 ```pip install -r requirements.txt```
 
+To Start Flask Server
+ 
+```cd api```
+
+```python app.py```
+
+To Start React Server
+
+```cd frontend```
+
+```npm start```
 
